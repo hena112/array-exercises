@@ -1,4 +1,3 @@
-
 #include <iostream>
 using namespace std;
 
@@ -68,7 +67,7 @@ int main() {
         cout << "Number " << i + 1 << ": ";
         cin >> num[i];
     }
-
+    
     sum(num, size, s);
     multiplication(num, size, mp);
     average(s, size, av);
