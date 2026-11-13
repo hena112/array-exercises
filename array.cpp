@@ -1,17 +1,17 @@
 #include <iostream>
 using namespace std;
 
-void sum(int a[], int n, int &s) {
+void sum(int arr[], int n, int &s) {
     s = 0;
     for(int i = 0; i < n; i++) {
-        s += a[i];
+        s += arr[i];
     }
 }
 
-void multiplication(int a[], int n, int &mp) {
+void multiplication(int arr[], int n, int &mp) {
     mp = 1;
     for(int i = 0; i < n; i++) {
-        mp *= a[i];
+        mp *= arr[i];
     }
 }
 
@@ -19,20 +19,20 @@ void average(int s, int n, double &av) {
     av = static_cast<double>(s) / n;
 }
 
-void minimum(int a[], int n, int &mn) {
-    mn = a[0];
+void minimum(int arr[], int n, int &mn) {
+    mn = arr[0];
     for(int i = 1; i < n; i++) {
-        if(a[i] < mn) {
-            mn = a[i];
+        if(arr[i] < mn) {
+            mn = arr[i];
         }
     }
 }
 
-void maximum(int a[], int n, int &mx) {
-    mx = a[0];
+void maximum(int arr[], int n, int &mx) {
+    mx = arr[0];
     for(int i = 1; i < n; i++) {
-        if(a[i] > mx) {
-            mx = a[i];
+        if(arr[i] > mx) {
+            mx = arr[i];
         }
     }
 }
@@ -67,7 +67,6 @@ int main() {
         cout << "Number " << i + 1 << ": ";
         cin >> num[i];
     }
-    
     sum(num, size, s);
     multiplication(num, size, mp);
     average(s, size, av);
